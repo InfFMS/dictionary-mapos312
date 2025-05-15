@@ -6,3 +6,12 @@
 # Абракадабра
 # Вывод
 # а-5 б-2 д-1 к-1 р-2
+s=input()
+a=set(s)
+x={i: s.count(i) for i in set(s)}
+y=str(x)
+y=y.replace('{', '')
+y=y.replace('}' , '')
+y=y.replace("'" , '')
+y=y.replace(':' , '-')
+print(y)
